@@ -1,0 +1,30 @@
+# Update package lists
+sudo apt update
+
+# Install Redis server
+sudo apt install redis-server -y
+
+# Edit Redis configuration to enable Redis as a service
+sudo nano /etc/redis/redis.conf
+
+find the line that says supervised no and change it to supervised systemd. 
+Then save and exit (Ctrl+X, then Y, then Enter).
+
+# Restart Redis service
+sudo systemctl restart redis
+
+# Check Redis status
+sudo systemctl status redis
+
+# Test Redis
+redis-cli ping
+
+#Install Postman
+sudo apt update
+sudo apt install snapd
+sudo snap install postman
+
+#Set Up Colloection CURL
+curl -X POST http://localhost:8000/api/shorten/ \
+  -H "Content-Type: application/json" \
+  -d '{"url": "https://www.example.com/this/is/a/very/long/url/that/needs/shortening"}'
