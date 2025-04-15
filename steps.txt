@@ -19,7 +19,7 @@ sudo systemctl status redis
 # Test Redis
 redis-cli ping
 
-#Install Postman
+#Install Postman trhough snapd
 sudo apt update
 sudo apt install snapd
 sudo snap install postman
