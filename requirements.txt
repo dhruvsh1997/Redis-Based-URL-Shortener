@@ -4,3 +4,4 @@ redis==4.3.1
 psycopg2-binary==2.9.5
 numpy==1.23.4
 pandas==1.5.2
+scipy
