@@ -1,7 +1,7 @@
 # Update package lists
 sudo apt update
 
-# Install Redis server
+# Install Redis servers
 sudo apt install redis-server -y
 
 # Edit Redis configuration to enable Redis as a service
